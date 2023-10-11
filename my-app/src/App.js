@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import ComponentFunction from './component/ComponentFunction';
+import ComponentFunctionProperties from './component/ComponentFunctionProperties';
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <ComponentFunction />
+        <ComponentFunctionProperties name="abdul" age="25" />
+        <ComponentFunctionProperties name="hidayat" age="26" />
       </header>
     </div>
   );
