@@ -6,7 +6,7 @@ class ToDoList extends Component {
         super(props)
         this.state = {
             toDoItem: '',
-            items: []
+            items: [],
         }
     }
 
@@ -25,8 +25,10 @@ class ToDoList extends Component {
     }
 
     handleReset = (event) => {
+        event.preventDefault();
         this.setState({
-            // to do
+            toDoItem: '',
+            items: [],
         })
     }
     
