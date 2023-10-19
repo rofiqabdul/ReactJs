@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import ComponentFunction from './component/ComponentFunction';
-import ComponentFunctionProperties from './component/ComponentFunctionProperties';
-import Timer from './component/State';
-import HandleEvent from './component/HandleEvent';
-import ToDoList from './component/ToDoList';
+import ConsumeAPI from './component/ConsumeAPI';
+// import ComponentFunction from './component/ComponentFunction';
+// import ComponentFunctionProperties from './component/ComponentFunctionProperties';
+// import Timer from './component/State';
+// import HandleEvent from './component/HandleEvent';
+// import ToDoList from './component/ToDoList';
 
 class App extends Component {
   render() {
@@ -32,7 +33,8 @@ class App extends Component {
       //     {/* <HandleEvent /> */}
       // </div>
 
-      <ToDoList />
+      // <ToDoList />
+      <ConsumeAPI />
     );
   }
 }
