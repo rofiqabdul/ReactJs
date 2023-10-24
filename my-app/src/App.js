@@ -6,10 +6,11 @@ import './App.css';
 // import Timer from './component/State';
 // import HandleEvent from './component/HandleEvent';
 // import ToDoList from './component/ToDoList';
-import ConsumeAPI from './component/ConsumeAPI';
-import Home from './component/Home';
-import NotFound from './component/NotFound';
-import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
+// import ConsumeAPI from './component/ConsumeAPI';
+// import Home from './component/Home';
+// import NotFound from './component/NotFound';
+// import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
+import Column from './component/Column';
 
 class App extends Component {
   render() {
@@ -39,22 +40,30 @@ class App extends Component {
       // <ToDoList />
       // <ConsumeAPI />
 
-      <BrowserRouter>
-        <div>
-          <nav>
-            <li> <Link to='/' > Home </Link> </li>
-            <li> <Link to='/consume-api' > Consume API </Link> </li>
-          </nav>
+      // SPA dan Routing
+      // <BrowserRouter>
+      //   <div>
+      //     <nav>
+      //       <li> <Link to='/' > Home </Link> </li>
+      //       <li> <Link to='/consume-api' > Consume API </Link> </li>
+      //     </nav>
 
-          <main>
-            <Switch>
-              <Route path='/' exact component={Home} />
-              <Route path='/consume-api' exact component={ConsumeAPI} />
-              <Route component={NotFound} />
-            </Switch>
-          </main>
-        </div>
-      </BrowserRouter>
+      //     <main>
+      //       <Switch>
+      //         <Route path='/' exact component={Home} />
+      //         <Route path='/consume-api' exact component={ConsumeAPI} />
+      //         <Route component={NotFound} />
+      //       </Switch>
+      //     </main>
+      //   </div>
+      // </BrowserRouter>
+
+      // React Fragment
+      <table>
+        <tr>
+          <Column />
+        </tr>
+      </table>
     );
   }
 }
